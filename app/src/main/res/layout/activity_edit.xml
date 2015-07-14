@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/edit_background">
+
+    <EditText android:id="@+id/edit_colony"
+        android:layout_margin="8dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/submit_colony"
+        android:hint="@string/hint_colony"
+        android:textColor="#FFFF00"
+        android:textColorHint="#FFFF00"/>
+
+    <Button android:id="@+id/submit_colony"
+        android:layout_toRightOf="@+id/edit_colony"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ok_button" />
+
+    <EditText android:id="@+id/edit_pop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edit_colony"
+        android:layout_below="@+id/edit_colony"
+        android:layout_alignBaseline="@+id/submit_pop"
+        android:hint="@string/hint_pop"
+        android:textColor="#FFFF00"
+        android:textColorHint="#FFFF00"/>
+
+    <Button android:id="@+id/submit_pop"
+        android:layout_toRightOf="@+id/edit_pop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/submit_colony"
+        android:layout_alignLeft="@+id/submit_colony"
+        android:text="@string/ok_button" />
+
+    <EditText android:id="@+id/edit_fleet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edit_colony"
+        android:layout_below="@+id/edit_pop"
+        android:layout_alignBaseline="@+id/submit_fleet"
+        android:hint="@string/hint_fleet"
+        android:textColor="#FFFF00"
+        android:textColorHint="#FFFF00"/>
+
+    <Button android:id="@+id/submit_fleet"
+        android:layout_toRightOf="@+id/edit_fleet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/submit_pop"
+        android:layout_alignLeft="@+id/submit_colony"
+        android:text="@string/ok_button" />
+
+    <EditText android:id="@+id/edit_ships"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edit_colony"
+        android:layout_below="@+id/edit_fleet"
+        android:layout_alignBaseline="@+id/submit_ships"
+        android:hint="@string/hint_ships"
+        android:textColor="#FFFF00"
+        android:textColorHint="#FFFF00"/>
+
+    <Button android:id="@+id/submit_ships"
+        android:layout_toRightOf="@+id/edit_ships"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/submit_fleet"
+        android:layout_alignLeft="@+id/submit_colony"
+        android:text="@string/ok_button" />
+
+</RelativeLayout>

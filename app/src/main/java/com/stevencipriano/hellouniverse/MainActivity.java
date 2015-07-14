@@ -5,17 +5,12 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
+import android.content.Intent;
 
 
 public class MainActivity extends ActionBarActivity {
     Galaxy leninsWay;
-    TextView nameData;
-    TextView solarData;
-    TextView habitData;
-    TextView colonyData;
-    TextView popData;
-    TextView fleetData;
-    TextView shipsData;
+    TextView nameData, solarData, habitData, colonyData, popData, fleetData, shipsData;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,17 +30,18 @@ public class MainActivity extends ActionBarActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+        switch(item.getItemId()) {
+            case R.id.edit_galaxy:
+                Intent edit_intent = new Intent(this, EditGalaxy.class);
+                this.startActivity(edit_intent);
+                break;
+            case R.id.action_settings:
+                break;
+            default:
+                return super.onOptionsItemSelected(item);
         }
 
-        return super.onOptionsItemSelected(item);
+        return true;
     }
 
     private void createDefaultGalaxy() {
