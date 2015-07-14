@@ -9,7 +9,7 @@ import android.content.Intent;
 
 
 public class MainActivity extends ActionBarActivity {
-    Galaxy leninsWay;
+    static Galaxy leninsWay;
     TextView nameData, solarData, habitData, colonyData, popData, fleetData, shipsData;
 
     @Override
