@@ -44,6 +44,11 @@ public class MainActivity extends ActionBarActivity {
         return true;
     }
 
+    protected void onResume() {
+        super.onResume();
+        this.transferDataValues();
+    }
+
     private void createDefaultGalaxy() {
         leninsWay = new Galaxy("Lenin's Way", 511, 97);
         leninsWay.setGalaxyColonies(37579231);
