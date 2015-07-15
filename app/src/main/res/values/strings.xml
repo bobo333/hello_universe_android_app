@@ -26,4 +26,8 @@
     <string name="hint_pop">Enter galaxy population</string>
     <string name="hint_fleet">Enter number of fleets</string>
     <string name="hint_ships">Enter number of starships</string>
+
+    <string name="galaxy_one">Lenin Galaxy</string>
+    <string name="galaxy_two">Trotsky Galaxy</string>
+    <string name="galaxy_three">Stalin Galaxy</string>
 </resources>
